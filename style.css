@@ -1,0 +1,57 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+#game {
+  width: 500px;
+  height: 200px;
+  border: 1px solid black;
+}
+
+#character {
+  position: relative;
+  top: 150px;
+}
+
+#block {
+  position: relative;
+  top: 150px;
+  left: 480px;
+  animation: block 1s infinite;
+  /*animation-name: block;
+  animation-duration: 1s;
+  animation-timing-function: infinite;*/
+}
+
+.animate {
+  animation: jump 500ms;
+}
+
+@keyframes block {
+  0% {
+    left: 480px;
+  }
+
+  100% {
+    left: -40px;
+  }
+}
+
+@keyframes jump {
+  0% {
+    top: 150px;
+  }
+
+  35% {
+    top: 100px;
+  }
+
+  65% {
+    top: 100px;
+  }
+
+  100% {
+    top: 150px;
+  }
+}
